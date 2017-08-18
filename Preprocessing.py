@@ -18,11 +18,11 @@ def image_crop_square(image_1):
       elif image_1.shape[1] > image_1.shape[0]:
             extra = (image_1.shape[1] - image_1.shape[0])
             if (extra % 2 == 0):
-                  crop = img[:, extra // 2:-extra //2]
+                  crop = image_1[:, extra // 2:-extra //2]
             else:
-                  crop = img[:, max(0, extra // 2 +1):min(-1, -(extra // 2))]
+                  crop = image_1[:, max(0, extra // 2 +1):min(-1, -(extra // 2))]
       else:
-            crop = img
+            crop = image_1
 return crop
 
 ### End Function definition
