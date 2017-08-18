@@ -4,6 +4,7 @@
 import matplotlib.pyplot as plt
 import os
 import numpy as np
+from scipy.misc import imresize
 
 
 ### Start Function definition
