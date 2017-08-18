@@ -39,3 +39,5 @@ plt.imshow(img[0])
 # Show heatmap of images
 [plt.imshow(img[i][:,:,0]) for i in range(0,len(files))]
 
+# resize the img
+rsz = imresize(img[0], (64, 64))
