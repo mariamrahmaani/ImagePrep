@@ -1,5 +1,6 @@
 
 # This code is tested on Jupyter Qt Console
+# This is tested line-by-line in interactive mode. If tested as a whole script, some cmdlines such as %matplotlib inline may not work 
 import matplotlib.pyplot as plt
 import os
 import numpy as np
