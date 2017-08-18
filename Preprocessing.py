@@ -5,6 +5,30 @@ import matplotlib.pyplot as plt
 import os
 import numpy as np
 
+
+### Start Function definition
+# The function "image_crop_square" takes an image as an input and returns a cropped square image
+def image_crop_square(image_1):
+    if image_1.shape[0] > image_1.shape[1]:
+      extra = (image_1.shape[0] - image_1.shape[1])
+      if extra % 2 == 0:
+        crop = image_1[extra // 2:-extra // 2,:]
+      else:
+        crop = image_1[max(0, extra // 2 +1):min(-1, -(extra // 2)), :]
+    elif image_1.shape[1] > image_1.shape[0]:
+        extra = (image_1.shape[1] - image_1.shape[0])
+        if extra % 2 == 0:
+          crop = img[:, extra // 2:-extra //2]
+        else:
+          crop = img[:, max(0, extra // 2 +1):min(-1, -(extra // 2))]
+
+    else:
+      crop = img
+return crop
+
+### End Function definition
+
+
 %matplotlib inline
 
 # Put all the files in an array of images from img[0] to img[9]
