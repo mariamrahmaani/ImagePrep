@@ -41,3 +41,7 @@ plt.imshow(img[0])
 
 # resize the img
 rsz = imresize(img[0], (64, 64))
+# put all the images in a numpy array
+data = np.array(img)
+data.shape
+
