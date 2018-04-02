@@ -1,16 +1,6 @@
 
 # This code is tested on Jupyter Qt Console
 # This is tested line-by-line in interactive mode. If tested as a whole script, some cmdlines such as %matplotlib inline may not work 
-import matplotlib.pyplot as plt
-import os
-import numpy as np
-from scipy.misc import imresize
-import sys
-if sys.version_info < (3,4):
-    print('You are running an older version of Python!\n\n' \
-          'You should consider updating to Python 3.4.0 or ' \
-          'higher. Try installing the Python 3.5 version of anaconda ')
-
 try:
     import os
     import numpy as np
